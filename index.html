@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Responsive Admin Panel🥦</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="logo-apple"></ion-icon></span>
+                        <span class="title">Nutrice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="restaurant-outline"></ion-icon></span>
+                        <span class="title">Progreso de Preparación</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Configuración</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                        <span class="title">Ayuda</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Cerrar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- Search bar -->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar..." id="search">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- User Image -->
+                <div class="user">
+                    <img src="./Assets/user.jpg" alt="user profile">
+                </div>
+            </div>
+            <!-- Cards -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers" id="customers">000</div>
+                            <div class="cardName">Clientes</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers" id="income">000</div>
+                            <div class="cardName">Ganancia Semanal</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers" id="progress">50%</div>
+                            <div class="cardName">Progreso del Día</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <!-- Detail List -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Lista de Clientes</h2>
+                        <a href="#" class="btn"><ion-icon name="person-add-outline"></ion-icon> Añadir</a>
+                    </div>
+                    <table id="tabla">
+                        <thead>
+                            <tr>
+                                <td>Nombre</td>
+                                <td>Cuota</td>
+                                <td>Estado de Pago</td>
+                                <td>Acciones</td>
+                                <td>Status</td>
+                                
+                            </tr>
+                        </thead>
+                        <tbody id="fila">
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Clientes Recientes</h2>
+                    </div>
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Assets/img1.jpg"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Assets/img1.jpg"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Assets/img1.jpg"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Assets/img1.jpg"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Assets/img1.jpg"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="Assets/img1.jpg"></div></td>
+                            <td><h4>David<br><span>Italy</span></h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
